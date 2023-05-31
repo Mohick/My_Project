@@ -1,0 +1,380 @@
+.form {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: #000;
+
+    .form__container {
+        .form__container_title {
+            padding: 5rem 0;
+
+            h2 {
+                color: #fff;
+                font-size: 3rem;
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    .form__container_slider {
+        cursor: grab;
+        width: calc(100%);
+        margin: auto;
+
+        &:active {
+            cursor: grabbing;
+        }
+
+        .form__box_slider {
+            width: 40rem;
+            padding: 2rem;
+
+            .form__box_content {
+                position: relative;
+                height: 55rem;
+                background: #fff;
+                width: 100%;
+
+                .form__box_img {
+                    width: 100%;
+                    padding: 0.2rem;
+
+                    img {
+                        width: calc(100%);
+                    }
+                }
+
+                .form__box_title_description {
+                    padding: 2rem;
+
+                    .form__box_title {
+                        h2 {
+                            font-size: 2rem;
+                            text-transform: capitalize;
+                            text-align: start;
+                            margin-bottom: 1rem;
+                        }
+                    }
+
+                    .form__box_description {
+                        p {
+                            margin-top: 1rem;
+                            font-size: 1.6rem;
+                            text-align: justify;
+                        }
+                    }
+                }
+
+                .form__box_access {
+                    position: absolute;
+                    bottom: 5%;
+                    width: 100%;
+                    padding: 2rem;
+
+                    .access {
+                        width: 100%;
+
+                        button {
+                            width: 100%;
+                            text-align: center;
+                            background-color: #0078d6;
+                            padding: 1rem;
+                            font-weight: 700;
+                            font-size: 1.6rem;
+                            color: #fff;
+                            text-transform: capitalize;
+                            cursor: pointer;
+
+                            &:hover {
+                                background-color: #014880;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1199px) and (min-width:1000px) {
+    .form {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        background: #000;
+
+        .form__container {
+            .form__container_title {
+                padding: 5rem 0;
+
+                h2 {
+                    color: #fff;
+                    font-size: 3rem;
+                    text-transform: capitalize;
+                }
+            }
+        }
+
+        .form__container_slider {
+            cursor: grab;
+            width: calc(100% - 5rem);
+            margin: auto;
+
+            .form__box_slider {
+                width: 32rem;
+                padding: 1rem;
+
+                .form__box_content {
+                    position: relative;
+                    height: 55rem;
+                    background: #fff;
+                    width: 100%;
+
+                    .form__box_img {
+                        width: 100%;
+                        padding: 0.2rem;
+
+                        img {
+                            width: calc(100%);
+                        }
+                    }
+
+                    .form__box_title_description {
+                        padding: 2rem;
+
+                        .form__box_title {
+                            h2 {
+                                font-size: 2rem;
+                                text-transform: capitalize;
+                                text-align: start;
+                                margin-bottom: 1rem;
+                            }
+                        }
+
+                        .form__box_description {
+                            p {
+                                margin-top: 1rem;
+                                font-size: 1.6rem;
+                                text-align: justify;
+                            }
+                        }
+                    }
+
+                    .form__box_access {
+                        position: absolute;
+                        bottom: 5%;
+                        width: 100%;
+                        padding: 2rem;
+
+                        .access {
+                            width: 100%;
+
+                            button {
+                                width: 100%;
+                                text-align: center;
+                                background-color: #0078d6;
+                                padding: 1rem;
+                                font-weight: 700;
+                                font-size: 1.6rem;
+                                color: #fff;
+                                text-transform: capitalize;
+                                cursor: pointer;
+
+                                &:hover {
+                                    background-color: #014880;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:999px) and (min-width:760px) {
+    .form {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        background: #000;
+
+        .form__container {
+            .form__container_title {
+                padding: 5rem 0;
+
+                h2 {
+                    color: #fff;
+                    font-size: 3rem;
+                    text-transform: capitalize;
+                }
+            }
+        }
+
+        .form__container_slider {
+            cursor: grab;
+            width: calc(100%);
+            margin: auto;
+
+            .form__box_slider {
+                width: 35rem;
+                padding: 1rem;
+
+                .form__box_content {
+                    position: relative;
+                    height: 55rem;
+                    background: #fff;
+                    width: 100%;
+
+                    .form__box_img {
+                        width: 100%;
+                        padding: 0.2rem;
+
+                        img {
+                            width: calc(100%);
+                        }
+                    }
+
+                    .form__box_title_description {
+                        padding: 2rem;
+
+                        .form__box_title {
+                            h2 {
+                                font-size: 2rem;
+                                text-transform: capitalize;
+                                text-align: start;
+                                margin-bottom: 1rem;
+                            }
+                        }
+
+                        .form__box_description {
+                            p {
+                                margin-top: 1rem;
+                                font-size: 1.6rem;
+                                text-align: justify;
+                            }
+                        }
+                    }
+
+                    .form__box_access {
+                        position: absolute;
+                        bottom: 5%;
+                        width: 100%;
+                        padding: 2rem;
+
+                        .access {
+                            width: 100%;
+
+                            button {
+                                width: 100%;
+                                text-align: center;
+                                background-color: #0078d6;
+                                padding: 1rem;
+                                font-weight: 700;
+                                font-size: 1.6rem;
+                                color: #fff;
+                                text-transform: capitalize;
+                                cursor: pointer;
+
+                                &:hover {
+                                    background-color: #014880;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:759px) {
+    .form {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        background: #000;
+        .form__container {
+            .form__container_title {
+                padding: 5rem 0;
+                margin-top: 4rem;
+                h2 {
+                    color: #fff;
+                    font-size: 3rem;
+                    text-transform: capitalize;
+                }
+            }
+        }
+
+        .form__container_slider {
+            cursor: grab;
+            width: calc(100% - 2rem);
+            margin: auto;
+
+            .form__box_slider {
+                width: 45rem;
+                padding: 1rem;
+
+                .form__box_content {
+                    position: relative;
+                    height: 55rem;
+                    background: #fff;
+                    width: 100%;
+
+                    .form__box_img {
+                        width: 100%;
+                        padding: 0.2rem;
+
+                        img {
+                            width: calc(100%);
+                        }
+                    }
+
+                    .form__box_title_description {
+                        padding: 2rem;
+
+                        .form__box_title {
+                            h2 {
+                                font-size: 2rem;
+                                text-transform: capitalize;
+                                text-align: start;
+                                margin-bottom: 1rem;
+                            }
+                        }
+
+                        .form__box_description {
+                            p {
+                                margin-top: 1rem;
+                                font-size: 1.6rem;
+                                text-align: justify;
+                            }
+                        }
+                    }
+
+                    .form__box_access {
+                        position: absolute;
+                        bottom: 5%;
+                        width: 100%;
+                        padding: 2rem;
+
+                        .access {
+                            width: 100%;
+
+                            button {
+                                width: 100%;
+                                text-align: center;
+                                background-color: #0078d6;
+                                padding: 1rem;
+                                font-weight: 700;
+                                font-size: 1.6rem;
+                                color: #fff;
+                                text-transform: capitalize;
+                                cursor: pointer;
+
+                                &:hover {
+                                    background-color: #014880;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

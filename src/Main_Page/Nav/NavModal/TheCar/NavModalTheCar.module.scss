@@ -1,0 +1,163 @@
+.form {
+    position: fixed;
+    bottom: 0;
+    display: none;
+    right: 0;
+    left: 0;
+    background-color: rgba($color: #000000, $alpha: .5);
+    z-index: 3;
+
+    &.js__modal_theCar {
+        display: block;
+    }
+
+    .form__container {
+        position: relative;
+
+        .form__box_content {
+            background: #f4f4f4;
+            z-index: 4;
+            position: absolute;
+            top: 0%;
+            width: 40%;
+            height: 50rem;
+            border-radius: 0.5rem;
+            -webkit-border-radius: 0.5rem;
+            -moz-border-radius: 0.5rem;
+            -ms-border-radius: 0.5rem;
+            -o-border-radius: 0.5rem;
+            pointer-events: stroke;
+            padding: 2rem;
+            overflow-x: hidden;
+            animation: open 0.2s linear;
+            -webkit-animation: open 0.2s linear;
+
+            .form__box_title {
+                width: 100%;
+
+                h3 {
+                    text-align: left;
+                    padding: 2rem;
+                    font-size: 2rem;
+                    font-weight: 100;
+                    text-transform: capitalize;
+                }
+            }
+
+            .form__box_close {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 1rem;
+                border-radius: 0rem 0.5rem 0.5rem 0;
+                -webkit-border-radius: 0rem 0.5rem 0.5rem 0;
+                -moz-border-radius: 0rem 0.5rem 0.5rem 0;
+                -ms-border-radius: 0rem 0.5rem 0.5rem 0;
+                -o-border-radius: 0rem 0.5rem 0.5rem 0;
+                cursor: pointer;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    right: 0;
+                }
+
+                svg {
+                    fill: #333;
+                    width: 2rem;
+                }
+            }
+
+            .form__box_list {
+                width: 100%;
+                padding: 2rem;
+                overflow-y: scroll;
+                overflow-x: hidden;
+                height: 80%;
+
+                &::-webkit-scrollbar {
+                    width: .3rem;
+                    border-radius: 1rem;
+                    -webkit-border-radius: 1rem;
+                    -moz-border-radius: 1rem;
+                    -ms-border-radius: 1rem;
+                    -o-border-radius: 1rem;
+                    background-color: #ccc;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: rgb(75, 75, 77);
+                    border-radius: 1rem;
+                    -webkit-border-radius: 1rem;
+                    -moz-border-radius: 1rem;
+                    -ms-border-radius: 1rem;
+                    -o-border-radius: 1rem;
+                }
+
+
+                ul {
+                    width: 100%;
+
+                    li {
+                        width: 100%;
+                        list-style: none;
+                        margin: 0.5rem 0;
+
+                        a {
+                            width: 100%;
+                            display: block;
+                            padding: 1rem 0;
+                            text-decoration: none;
+                            font-size: 2rem;
+                            color: #656464;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes open {
+    0% {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes close {
+    0% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        opacity: 0;
+    }
+}

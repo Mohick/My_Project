@@ -1,0 +1,826 @@
+.form {
+    width: 100%;
+    background: #000;
+    margin-top: 5rem;
+
+    .form__container {
+        padding: 2rem 0;
+
+        .form__box_back_top {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .form__arrowTop__icon {
+                fill: #fff;
+                width: 4rem;
+                cursor: pointer;
+            }
+
+            .form__arrowTop__title {
+                h4 {
+                    color: #fff;
+                    font-size: 1.2rem;
+                    text-transform: capitalize;
+                    letter-spacing: 0.1rem;
+                }
+
+            }
+        }
+
+        .form__box_send_contact {
+            width: 100%;
+            margin-top: 4rem;
+            padding: 2rem;
+            display: flex;
+            border: 0.1rem solid #fff;
+            border-radius: .6rem;
+            -webkit-border-radius: .6rem;
+            -moz-border-radius: .6rem;
+            -ms-border-radius: .6rem;
+            -o-border-radius: .6rem;
+
+            .form___send_contact {
+                flex: 2;
+
+                .form___send_contact_title {
+                    margin-bottom: 1rem;
+
+                    h3 {
+                        color: #fff;
+                        text-transform: capitalize;
+                        font-size: 1.6rem;
+                    }
+                }
+
+                .form___send_contact_description {
+                    margin-top: 1rem;
+
+                    p {
+                        color: #9f9f9f;
+                        text-transform: capitalize;
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+
+            .form___signUp {
+                background: #0078d6;
+                cursor: pointer;
+                border-radius: .6rem;
+                -webkit-border-radius: .6rem;
+                -moz-border-radius: .6rem;
+                -ms-border-radius: .6rem;
+                -o-border-radius: .6rem;
+
+                a {
+                    text-decoration: none;
+
+                    h3 {
+                        font-size: 1.6rem;
+                        color: #fff;
+                        padding: 3rem;
+                        text-transform: capitalize;
+                        letter-spacing: 0.1rem;
+                    }
+                }
+
+                &:hover {
+                    background-color: #014880;
+                    transition: all 0.3s;
+                    -webkit-transition: all 0.3s;
+                    -moz-transition: all 0.3s;
+                    -ms-transition: all 0.3s;
+                    -o-transition: all 0.3s;
+                }
+            }
+        }
+
+        .form__container_listItems {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 3rem;
+            margin-top: 3rem;
+
+            .form__box_listItems {
+                width: 100%;
+
+                .form__name_listItems {
+                    h3 {
+                        font-size: 1.6rem;
+                        color: #fff;
+                        text-transform: capitalize;
+                    }
+                }
+
+                .form__listItems {
+                    ul {
+                        li {
+                            padding: 1rem 0;
+                            cursor: pointer;
+
+                            a {
+                                color: #bbb;
+                                position: relative;
+                                text-decoration: none;
+                                font-size: 1.4rem;
+                                text-transform: capitalize;
+
+                                &::before {
+                                    content: '';
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 1px;
+                                    border-radius: 4px;
+                                    background-color: #fff;
+                                    bottom: -0.3rem;
+                                    left: 0;
+                                    transform-origin: left;
+                                    transform: scaleX(0);
+                                    transition: transform .3s ease-in-out;
+                                }
+
+                                &:hover::before {
+                                    transform-origin: left;
+                                    transform: scaleX(1);
+                                    -webkit-transform: scaleX(1);
+                                    -moz-transform: scaleX(1);
+                                    -ms-transform: scaleX(1);
+                                    -o-transform: scaleX(1);
+                                }
+
+                                &:hover {
+                                    color: #fff;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .form__container_security {
+            margin-top: 3rem;
+            border-top: 0.1rem solid #fff;
+            padding: 2rem 0;
+            display: flex;
+
+            .form__box_security {
+
+                .form__box_permission_content {
+                    display: flex;
+                    gap: 1.63rem;
+
+                    li {
+                        list-style: none;
+
+                        a {
+                            text-decoration: none;
+
+                            h3 {
+                                text-transform: capitalize;
+                                color: #bbb;
+                                position: relative;
+                                text-decoration: none;
+                                font-size: 1.4rem;
+                                text-transform: capitalize;
+
+                                &::before {
+                                    content: '';
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 1px;
+                                    border-radius: 4px;
+                                    background-color: #fff;
+                                    bottom: -0.3rem;
+                                    left: 0;
+                                    transform-origin: left;
+                                    transform: scaleX(0);
+                                    transition: transform .3s ease-in-out;
+                                }
+
+                                &:hover::before {
+                                    transform-origin: left;
+                                    transform: scaleX(1);
+                                    -webkit-transform: scaleX(1);
+                                    -moz-transform: scaleX(1);
+                                    -ms-transform: scaleX(1);
+                                    -o-transform: scaleX(1);
+                                    color: #fff;
+                                }
+
+                                &:hover {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .form__box_icon_contact {
+                flex: 1;
+
+                ul {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+
+                    li {
+                        list-style: none;
+                        margin-left: 3rem;
+
+                        a {
+                            svg {
+                                fill: #fff;
+                                width: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1199px) and (min-width:1000px) {
+    .form {
+        width: 100%;
+        background: #000;
+        margin-top: 5rem;
+
+        .form__container {
+            padding: 2rem 0;
+            width: calc(100%);
+
+            .form__box_back_top {
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 4rem;
+
+                .form__arrowTop__icon {
+                    fill: #fff;
+                    width: 4rem;
+                    cursor: pointer;
+                }
+
+                .form__arrowTop__title {
+                    h4 {
+                        color: #fff;
+                        font-size: 1.2rem;
+                        text-transform: capitalize;
+                        letter-spacing: 0.1rem;
+                    }
+
+                }
+            }
+
+            .form__box_send_contact {
+                width: calc(100% - 2rem);
+                margin-top: 4rem;
+                margin: auto;
+                padding: 2rem;
+                display: flex;
+                border: 0.1rem solid #fff;
+                border-radius: .6rem;
+                -webkit-border-radius: .6rem;
+                -moz-border-radius: .6rem;
+                -ms-border-radius: .6rem;
+                -o-border-radius: .6rem;
+
+                .form___send_contact {
+                    flex: 2;
+
+                    .form___send_contact_title {
+                        margin-bottom: 1rem;
+
+                        h3 {
+                            color: #fff;
+                            text-transform: capitalize;
+                            font-size: 1.6rem;
+                        }
+                    }
+
+                    .form___send_contact_description {
+                        margin-top: 1rem;
+
+                        p {
+                            color: #9f9f9f;
+                            text-transform: capitalize;
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+
+                .form___signUp {
+                    background: #0078d6;
+                    cursor: pointer;
+                    border-radius: .6rem;
+                    -webkit-border-radius: .6rem;
+                    -moz-border-radius: .6rem;
+                    -ms-border-radius: .6rem;
+                    -o-border-radius: .6rem;
+
+                    a {
+                        text-decoration: none;
+
+                        h3 {
+                            font-size: 1.6rem;
+                            color: #fff;
+                            padding: 3rem;
+                            text-transform: capitalize;
+                            letter-spacing: 0.1rem;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: #014880;
+                        transition: all 0.3s;
+                        -webkit-transition: all 0.3s;
+                        -moz-transition: all 0.3s;
+                        -ms-transition: all 0.3s;
+                        -o-transition: all 0.3s;
+                    }
+                }
+            }
+
+            .form__container_listItems {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+                width: calc(100% - 2rem);
+                margin: auto;
+                gap: 3rem;
+                margin-top: 3rem;
+
+                .form__box_listItems {
+                    width: 100%;
+
+                    .form__name_listItems {
+                        h3 {
+                            font-size: 1.6rem;
+                            color: #fff;
+                            text-transform: capitalize;
+                        }
+                    }
+
+                }
+            }
+
+            .form__container_security {
+                width: calc(100% - 2rem);
+                margin: auto;
+            }
+
+
+        }
+    }
+
+}
+
+@media only screen and (max-width:999px) and (min-width:760px) {
+    .form {
+        width: 100%;
+        background: #000;
+        margin-top: 5rem;
+
+        .form__container {
+            padding: 2rem 0;
+            width: calc(100%);
+
+            .form__box_back_top {
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 4rem;
+
+                .form__arrowTop__icon {
+                    fill: #fff;
+                    width: 4rem;
+                    cursor: pointer;
+                }
+
+                .form__arrowTop__title {
+                    h4 {
+                        color: #fff;
+                        font-size: 1.2rem;
+                        text-transform: capitalize;
+                        letter-spacing: 0.1rem;
+                    }
+
+                }
+            }
+
+            .form__box_send_contact {
+                width: calc(100% - 2rem);
+                margin-top: 4rem;
+                margin: auto;
+                padding: 2rem;
+                display: flex;
+                border: 0.1rem solid #fff;
+                border-radius: .6rem;
+                -webkit-border-radius: .6rem;
+                -moz-border-radius: .6rem;
+                -ms-border-radius: .6rem;
+                -o-border-radius: .6rem;
+
+                .form___send_contact {
+                    flex: 2;
+
+                    .form___send_contact_title {
+                        margin-bottom: 1rem;
+
+                        h3 {
+                            color: #fff;
+                            text-transform: capitalize;
+                            font-size: 1.6rem;
+                        }
+                    }
+
+                    .form___send_contact_description {
+                        margin-top: 1rem;
+
+                        p {
+                            color: #9f9f9f;
+                            text-transform: capitalize;
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+
+                .form___signUp {
+                    background: #0078d6;
+                    cursor: pointer;
+                    border-radius: .6rem;
+                    -webkit-border-radius: .6rem;
+                    -moz-border-radius: .6rem;
+                    -ms-border-radius: .6rem;
+                    -o-border-radius: .6rem;
+
+                    a {
+                        text-decoration: none;
+
+                        h3 {
+                            font-size: 1.6rem;
+                            color: #fff;
+                            padding: 3rem;
+                            text-transform: capitalize;
+                            letter-spacing: 0.1rem;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: #014880;
+                        transition: all 0.3s;
+                        -webkit-transition: all 0.3s;
+                        -moz-transition: all 0.3s;
+                        -ms-transition: all 0.3s;
+                        -o-transition: all 0.3s;
+                    }
+                }
+            }
+
+            .form__container_listItems {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                width: calc(100% - 2rem);
+                margin: auto;
+                gap: 3rem;
+                margin-top: 3rem;
+
+                .form__box_listItems {
+                    width: 100%;
+
+                    .form__name_listItems {
+                        h3 {
+                            font-size: 1.6rem;
+                            color: #fff;
+                            text-transform: capitalize;
+                        }
+                    }
+
+                }
+            }
+
+            .form__container_security {
+                margin-top: 3rem;
+                border-top: 0.1rem solid #fff;
+                padding: 2rem 0;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+
+                .form__box_security {
+
+                    .form__box_permission_content {
+                        display: flex;
+                        gap: 1.63rem;
+
+                        li {
+                            list-style: none;
+
+                            a {
+                                text-decoration: none;
+
+                                h3 {
+                                    text-transform: capitalize;
+                                    color: #bbb;
+                                    position: relative;
+                                    text-decoration: none;
+                                    font-size: 1.4rem;
+                                    text-transform: capitalize;
+
+                                    &::before {
+                                        content: '';
+                                        position: absolute;
+                                        width: 100%;
+                                        height: 1px;
+                                        border-radius: 4px;
+                                        background-color: #fff;
+                                        bottom: -0.3rem;
+                                        left: 0;
+                                        transform-origin: left;
+                                        transform: scaleX(0);
+                                        transition: transform .3s ease-in-out;
+                                    }
+
+                                    &:hover::before {
+                                        transform-origin: left;
+                                        transform: scaleX(1);
+                                        -webkit-transform: scaleX(1);
+                                        -moz-transform: scaleX(1);
+                                        -ms-transform: scaleX(1);
+                                        -o-transform: scaleX(1);
+                                        color: #fff;
+                                    }
+
+                                    &:hover {
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .form__box_icon_contact {
+                    flex: 1;
+
+                    ul {
+                        display: grid;
+                        grid-template-columns: repeat(5, 1fr);
+                        align-items: center;
+                        margin-top: 3rem;
+
+                        li {
+                            list-style: none;
+                            margin-left: 0;
+
+                            a {
+                                svg {
+                                    margin: auto;
+                                    fill: #fff;
+                                    width: 2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+@media only screen and (max-width:759px) {
+    .form {
+        width: 100%;
+        background: #000;
+        margin-top: 5rem;
+
+        .form__container {
+            padding: 2rem 0;
+            width: calc(100%);
+
+            .form__box_back_top {
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 4rem;
+
+                .form__arrowTop__icon {
+                    fill: #fff;
+                    width: 4rem;
+                    cursor: pointer;
+                }
+
+                .form__arrowTop__title {
+                    h4 {
+                        color: #fff;
+                        font-size: 1.2rem;
+                        text-transform: capitalize;
+                        letter-spacing: 0.1rem;
+                    }
+
+                }
+            }
+
+            .form__box_send_contact {
+                width: calc(100% - 2rem);
+                margin-top: 4rem;
+                margin: auto;
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                border: 0.1rem solid #fff;
+                border-radius: .6rem;
+                -webkit-border-radius: .6rem;
+                -moz-border-radius: .6rem;
+                -ms-border-radius: .6rem;
+                -o-border-radius: .6rem;
+
+                .form___send_contact {
+                    flex: 2;
+
+                    .form___send_contact_title {
+                        margin-bottom: 1rem;
+
+                        h3 {
+                            color: #fff;
+                            text-transform: capitalize;
+                            font-size: 1.6rem;
+                        }
+                    }
+
+                    .form___send_contact_description {
+                        margin-top: 1rem;
+
+                        p {
+                            color: #9f9f9f;
+                            text-transform: capitalize;
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+
+                .form___signUp {
+                    background: #0078d6;
+                    cursor: pointer;
+                    border-radius: .6rem;
+                    -webkit-border-radius: .6rem;
+                    -moz-border-radius: .6rem;
+                    -ms-border-radius: .6rem;
+                    -o-border-radius: .6rem;
+                    margin-top: 4rem;
+
+                    a {
+                        text-decoration: none;
+
+                        h3 {
+                            font-size: 1.6rem;
+                            color: #fff;
+                            padding: 3rem;
+                            text-transform: capitalize;
+                            letter-spacing: 0.1rem;
+                            text-align: center;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: #014880;
+                        transition: all 0.3s;
+                        -webkit-transition: all 0.3s;
+                        -moz-transition: all 0.3s;
+                        -ms-transition: all 0.3s;
+                        -o-transition: all 0.3s;
+                    }
+                }
+            }
+
+            .form__container_listItems {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                width: calc(100% - 2rem);
+                margin: auto;
+                gap: 3rem;
+                margin-top: 3rem;
+
+                .form__box_listItems {
+                    width: 100%;
+
+                    .form__name_listItems {
+                        h3 {
+                            font-size: 1.6rem;
+                            color: #fff;
+                            text-transform: capitalize;
+                        }
+                    }
+
+                }
+            }
+
+            .form__container_security {
+                margin-top: 3rem;
+                border-top: 0.1rem solid #fff;
+                padding: 2rem 0;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+
+                .form__box_security {
+
+                    .form__box_permission_content {
+                        display: grid;
+                        gap: 1.63rem;
+                        grid-template-columns: repeat(1, 1fr);
+                        grid-template-rows: repeat(2, 1fr);
+
+                        li {
+                            list-style: none;
+
+                            a {
+                                text-decoration: none;
+
+                                h3 {
+                                    text-transform: capitalize;
+                                    color: #bbb;
+                                    position: relative;
+                                    text-decoration: none;
+                                    font-size: 1.4rem;
+                                    text-transform: capitalize;
+
+                                    &::before {
+                                        content: '';
+                                        position: absolute;
+                                        width: 100%;
+                                        height: 1px;
+                                        border-radius: 4px;
+                                        background-color: #fff;
+                                        bottom: -0.3rem;
+                                        left: 0;
+                                        transform-origin: left;
+                                        transform: scaleX(0);
+                                        transition: transform .3s ease-in-out;
+                                    }
+
+                                    &:hover::before {
+                                        transform-origin: left;
+                                        transform: scaleX(1);
+                                        -webkit-transform: scaleX(1);
+                                        -moz-transform: scaleX(1);
+                                        -ms-transform: scaleX(1);
+                                        -o-transform: scaleX(1);
+                                        color: #fff;
+                                    }
+
+                                    &:hover {
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .form__box_icon_contact {
+                    flex: 1;
+
+                    ul {
+                        display: grid;
+                        grid-template-columns: repeat(5, 1fr);
+                        align-items: center;
+                        margin-top: 3rem;
+
+                        li {
+                            list-style: none;
+                            margin-left: 0;
+
+                            a {
+                                svg {
+                                    margin: auto;
+                                    fill: #fff;
+                                    width: 2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+}

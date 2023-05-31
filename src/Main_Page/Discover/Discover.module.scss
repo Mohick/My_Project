@@ -1,0 +1,44 @@
+.form {
+    background: #000;
+
+    .form__container {
+        border-width: .1rem;
+        border-color: #fff transparent #fff transparent;
+        border-style: solid;
+
+        .form__containe_text {
+            font-family: MBCorpo Text, DaimlerCS-Regular, sans-serif;
+            color: #fff;
+            font-size: 1.8rem;
+            text-align: center;
+            padding: 1rem;
+            letter-spacing: .1.5rem;
+            text-transform: capitalize;
+            font-weight: 400;
+
+            a {
+                color: #fff;
+                font-weight: 600;
+                font-size: 1.9rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1199px) and (min-width:1000px) {
+    .form {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:999px) and (min-width:760px) {
+    .form {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:759px) {
+    .form {
+        display: none;
+    }
+}

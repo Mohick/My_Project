@@ -1,0 +1,195 @@
+.form {
+    background: #000;
+    border-top: 0.1rem solid #474747;
+    width: 100%;
+
+    .form__container {
+        width: 100%;
+
+        .form__container_list {
+            margin-left: -1.6rem;
+            margin: auto;
+            display: inline-flex;
+
+            .form__container_items {
+                margin-right: 1.7rem;
+                list-style: none;
+                cursor: pointer;
+
+                .form__container_item {
+                    padding: 1.6rem 0;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    text-decoration: none;
+
+                    h3 {
+                        cursor: pointer;
+                        font-weight: 300;
+                        font-size: 1.8rem;
+                        text-transform: capitalize;
+                        color: #bbb;
+                    }
+
+                    .form__icon_car {
+                        fill: rgb(187, 187, 187);
+                        width: 1.8rem;
+                        margin-right: .5rem;
+
+                        svg {
+                            width: 1.8rem;
+                        }
+                    }
+
+                    &:hover {
+                        h3 {
+                            color: #fff;
+                        }
+
+                        .form__icon_car {
+                            fill: #fff;
+
+                        }
+                    }
+
+                    .localUser {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+
+                    }
+
+                    .localtionUserTheCar {
+                        width: 0%;
+                        animation: openLocationUser 0.2s linear forwards;
+                        -webkit-animation: openLocationUser 0.2s linear forwards;
+                        transition: all 0.2s;
+                        -webkit-transition: all 0.2s;
+                        -moz-transition: all 0.2s;
+                        -ms-transition: all 0.2s;
+                        -o-transition: all 0.2s;
+                    }
+
+                    .localtionUserBuyCar {
+                        width: 0%;
+                        animation: openLocationUser 0.2s linear forwards;
+                        -webkit-animation: openLocationUser 0.2s linear forwards;
+                        transition: all 0.2s;
+                        -webkit-transition: all 0.2s;
+                        -moz-transition: all 0.2s;
+                        -ms-transition: all 0.2s;
+                        -o-transition: all 0.2s;
+                    }
+
+                    .localtionUserGuideBuyCar {
+                        width: 0%;
+                        animation: openLocationUser 0.2s linear forwards;
+                        -webkit-animation: openLocationUser 0.2s linear forwards;
+                        transition: all 0.2s;
+                        -webkit-transition: all 0.2s;
+                        -moz-transition: all 0.2s;
+                        -ms-transition: all 0.2s;
+                        -o-transition: all 0.2s;
+                    }
+
+                    .localtionUserService {
+                        width: 0%;
+                        animation: openLocationUser 0.2s linear forwards;
+                        -webkit-animation: openLocationUser 0.2s linear forwards;
+                        transition: all 0.2s;
+                        -webkit-transition: all 0.2s;
+                        -moz-transition: all 0.2s;
+                        -ms-transition: all 0.2s;
+                        -o-transition: all 0.2s;
+                    }
+
+                    .localtionUserGolbalMer {
+                        width: 0%;
+                        animation: openLocationUser 0.2s linear forwards;
+                        -webkit-animation: openLocationUser 0.2s linear forwards;
+                        transition: all 0.2s;
+                        -webkit-transition: all 0.2s;
+                        -moz-transition: all 0.2s;
+                        -ms-transition: all 0.2s;
+                        -o-transition: all 0.2s;
+                    }
+
+                    .closeLocaltionUser {
+                        width: 100%;
+                        animation: closeLocationUser 0.2s linear forwards;
+                        -webkit-animation: closeLocationUser 0.2s linear forwards;
+                        transition: all 0.2s;
+                        -webkit-transition: all 0.2s;
+                        -moz-transition: all 0.2s;
+                        -ms-transition: all 0.2s;
+                        -o-transition: all 0.2s;
+                    }
+                }
+            }
+
+            .form__container_items_theCar {
+                position: relative;
+            }
+
+            .form__container_items_buyCar {
+                position: relative;
+            }
+
+            .form__container_items_guideBuyCar {
+                position: relative;
+            }
+
+            .form__container_items_service {
+                position: relative;
+            }
+
+            .form__container_items_globalCar {
+                position: relative;
+            }
+        }
+    }
+}
+
+@keyframes openLocationUser {
+    0% {
+        width: 0%;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        width: 100%;
+        border-top: 0.1rem solid #0078d6;
+    }
+}
+
+@keyframes closeLocationUser {
+    0% {
+        opacity: 1;
+        width: 100%;
+    }
+
+    100% {
+        opacity: 0;
+        width: 0%;
+        border-top: 0.1rem solid #0078d6;
+    }
+}
+
+@media only screen and (max-width:1199px) and (min-width:1000px) {
+    .form {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:999px) and (min-width:760px) {
+    .form {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:759px) {
+    .form {
+        display: none;
+    }
+}

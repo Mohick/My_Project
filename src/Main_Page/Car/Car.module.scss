@@ -1,0 +1,887 @@
+.form {
+    width: 100%;
+
+    .form__container_content {
+        width: 100%;
+
+        .form__container_menu_car_mobi {
+            display: none;
+        }
+
+        .form__container_title {
+            width: calc(100% - 2rem);
+
+            .form__box_title {
+                width: 100%;
+
+                .title {
+                    padding: 4rem 0;
+                    font-size: 3rem;
+                    color: #333;
+                }
+            }
+        }
+
+        .form__container_trademark {
+            width: calc(100% - 2rem);
+            position: relative;
+            top: 0;
+            z-index: 3;
+            background-color: #fff;
+            padding-bottom: 1rem;
+
+            .form__box_trademark {
+                width: 100%;
+                display: flex;
+
+                .box_trademark {
+                    position: relative;
+                    border: 0.1rem solid #bbb;
+                    list-style: none;
+                    cursor: pointer;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        background-color: transparent;
+                    }
+
+                    &:first-child {
+                        background-color: #333;
+                        color: #fff;
+                        fill: #ffffff;
+
+                    }
+
+                    .trademark {
+                        display: block;
+                        padding: 1rem;
+
+                        h2 {
+                            padding: 0.5rem 1rem 1rem 1rem;
+                            text-align: center;
+                            font-size: 1.5rem;
+                            font-weight: 600;
+                            text-transform: capitalize;
+                        }
+
+                        svg {
+                            height: 3rem;
+                            width: 12rem;
+                            fill: #000000;
+                        }
+                    }
+
+                    &:hover {
+                        .trademark {
+                            display: block;
+                            background-color: #a5a0a0;
+                            padding: 1rem;
+
+                            h2 {
+                                color: #fff;
+
+                            }
+
+                            svg {
+                                height: 3rem;
+                                width: 12rem;
+                                fill: #000000;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .form__container_NavBar {
+            display: flex;
+            flex-direction: row;
+            margin-top: 3rem;
+
+            .form__box_NavBar {
+                width: 16.666666666666664%;
+            }
+
+            .form__box_items_car {
+                width: 83.33333333333334%;
+            }
+        }
+
+        .form__container_Name_TradeMark_dropdown {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width:1199px) and (min-width:1000px) {
+    .form {
+        width: 100%;
+
+        .form__container_content {
+            width: 100%;
+
+            .form__container_title {
+                width: calc(100% - 2rem);
+
+                .form__box_title {
+                    width: 100%;
+
+                    .title {
+                        padding: 4rem 0;
+                        font-size: 3rem;
+                        color: #333;
+                    }
+                }
+            }
+
+            .form__container_trademark {
+                display: none;
+                width: calc(100% - 2rem);
+                position: relative;
+                top: 0;
+                z-index: 3;
+                background-color: #fff;
+                padding-bottom: 1rem;
+
+                .form__box_trademark {
+                    width: 100%;
+                    display: flex;
+
+                    .box_trademark {
+                        position: relative;
+                        border: 0.1rem solid #bbb;
+                        list-style: none;
+                        cursor: pointer;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            top: 0;
+                            background-color: transparent;
+                        }
+
+                        &:first-child {
+                            background-color: #333;
+                            color: #fff;
+                            fill: #ffffff;
+
+                        }
+
+                        .trademark {
+                            display: block;
+                            padding: 1rem;
+
+                            h2 {
+                                padding: 0.5rem 1rem 1rem 1rem;
+                                text-align: center;
+                                font-size: 1.5rem;
+                                font-weight: 600;
+                                text-transform: capitalize;
+                            }
+
+                            svg {
+                                height: 3rem;
+                                width: 12rem;
+                                fill: #000000;
+                            }
+                        }
+
+                        &:hover {
+                            .trademark {
+                                display: block;
+                                background-color: #a5a0a0;
+                                padding: 1rem;
+
+                                h2 {
+                                    color: #fff;
+
+                                }
+
+                                svg {
+                                    height: 3rem;
+                                    width: 12rem;
+                                    fill: #000000;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .form__container_NavBar {
+                display: none;
+                flex-direction: column;
+                margin-top: 3rem;
+
+                .form__box_NavBar {
+                    width: 100%;
+                }
+
+                .form__box_items_car {
+                    width: 100%;
+                }
+            }
+
+            .form__container_Name_TradeMark_dropdown {
+                width: 100%;
+                display: block;
+                z-index: 6;
+
+                .form__box_title_TradeMark {
+                    background-color: #333;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 1rem;
+
+                    .box_title_TradeMark {
+                        color: #fff;
+                        font-size: 1.6rem;
+                    }
+
+                    .box_icon__dropdown {
+
+                        svg {
+                            width: 1.6rem;
+                            fill: #fff;
+                        }
+                    }
+                }
+
+                .form__box_name_body_car {
+                    width: 100%;
+                    background-color: #fff;
+
+                    .form__list_name_body_car {
+                        display: flex;
+
+                        .list_name_body_car_all {
+                            display: block;
+                        }
+
+                        .list_name_body_car_sedans {
+                            display: block;
+                        }
+
+                        .list_name_body_car_suv {
+                            display: block;
+                        }
+
+                        .list_name_body_car_coupe {
+                            display: block;
+                        }
+
+                        .list_name_body_car {
+                            position: relative;
+                            width: calc(100% /3);
+                            text-align: center;
+                            padding: 1rem;
+                            font-size: 1.6rem;
+                            font-weight: 700;
+                            list-style: none;
+
+                            &.localBodyCar {
+
+                                &::after {
+                                    position: absolute;
+                                    content: '';
+                                    bottom: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: .2rem;
+                                    background-color: #3374d6;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .form__container_menu_car_mobi {
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+
+                .form__box_menu_car_sedans {
+                    width: 100%;
+
+                    .sedansMobi {
+                        display: block;
+                    }
+
+                    .MerSedansMobi {
+                        display: none;
+                    }
+
+                    .AMGSendansMobi {
+                        display: none;
+                    }
+
+                    .MBSedansMobi {
+                        display: none;
+                    }
+                }
+
+                .form__box_menu_car_suv {
+                    width: 100%;
+
+                    .SUVMobi {
+                        display: block;
+                    }
+
+                    .MerSUVMobi {
+                        display: none;
+                    }
+
+                    .AMGSUVMobi {
+                        display: none;
+                    }
+
+                    .MBSUVMobi {
+                        display: none;
+                    }
+                }
+
+                .form__box_menu_car_coupe {
+                    width: 100%;
+
+                    .CoupeMobi {
+                        display: block;
+                    }
+
+                    .MerCoupeMobi {
+                        display: none;
+                    }
+
+                    .AMGCoupeMobi {
+                        display: none;
+                    }
+
+                    .MBCoupeMobi {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:999px) and (min-width:760px) {
+    .form {
+        width: 100%;
+
+        .form__container_content {
+            width: 100%;
+
+            .form__container_title {
+                width: calc(100% );
+
+                .form__box_title {
+                    width: 100%;
+
+                    .title {
+                        padding: 4rem 0;
+                        font-size: 3rem;
+                        color: #333;
+                    }
+                }
+            }
+
+            .form__container_trademark {
+                display: none;
+                width: calc(100% );
+                position: relative;
+                top: 0;
+                z-index: 3;
+                background-color: #fff;
+                padding-bottom: 1rem;
+
+                .form__box_trademark {
+                    width: 100%;
+                    display: flex;
+
+                    .box_trademark {
+                        position: relative;
+                        border: 0.1rem solid #bbb;
+                        list-style: none;
+                        cursor: pointer;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            top: 0;
+                            background-color: transparent;
+                        }
+
+                        &:first-child {
+                            background-color: #333;
+                            color: #fff;
+                            fill: #ffffff;
+
+                        }
+
+                        .trademark {
+                            display: block;
+                            padding: 1rem;
+
+                            h2 {
+                                padding: 0.5rem 1rem 1rem 1rem;
+                                text-align: center;
+                                font-size: 1.5rem;
+                                font-weight: 600;
+                                text-transform: capitalize;
+                            }
+
+                            svg {
+                                height: 3rem;
+                                width: 12rem;
+                                fill: #000000;
+                            }
+                        }
+
+                        &:hover {
+                            .trademark {
+                                display: block;
+                                background-color: #a5a0a0;
+                                padding: 1rem;
+
+                                h2 {
+                                    color: #fff;
+
+                                }
+
+                                svg {
+                                    height: 3rem;
+                                    width: 12rem;
+                                    fill: #000000;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .form__container_NavBar {
+                display: none;
+                flex-direction: column;
+                margin-top: 3rem;
+
+                .form__box_NavBar {
+                    width: 100%;
+                }
+
+                .form__box_items_car {
+                    width: 100%;
+                }
+            }
+
+            .form__container_Name_TradeMark_dropdown {
+                width: 100%;
+                display: block;
+                z-index: 6;
+
+                .form__box_title_TradeMark {
+                    background-color: #333;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 1rem;
+
+                    .box_title_TradeMark {
+                        color: #fff;
+                        font-size: 1.6rem;
+                    }
+
+                    .box_icon__dropdown {
+
+                        svg {
+                            width: 1.6rem;
+                            fill: #fff;
+                        }
+                    }
+                }
+
+                .form__box_name_body_car {
+                    width: 100%;
+                    background-color: #fff;
+
+                    .form__list_name_body_car {
+                        display: flex;
+
+                        .list_name_body_car_all {
+                            display: block;
+                        }
+
+                        .list_name_body_car_sedans {
+                            display: block;
+                        }
+
+                        .list_name_body_car_suv {
+                            display: block;
+                        }
+
+                        .list_name_body_car_coupe {
+                            display: block;
+                        }
+
+                        .list_name_body_car {
+                            position: relative;
+                            width: calc(100% /2);
+                            text-align: center;
+                            padding: 1rem;
+                            font-size: 1.6rem;
+                            font-weight: 700;
+                            list-style: none;
+
+                            &.localBodyCar {
+
+                                &::after {
+                                    position: absolute;
+                                    content: '';
+                                    bottom: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: .2rem;
+                                    background-color: #3374d6;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .form__container_menu_car_mobi {
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+
+                .form__box_menu_car_sedans {
+                    width: 100%;
+
+                    .sedansMobi {
+                        display: block;
+                    }
+
+                    .MerSedansMobi {
+                        display: none;
+                    }
+
+                    .AMGSendansMobi {
+                        display: none;
+                    }
+
+                    .MBSedansMobi {
+                        display: none;
+                    }
+                }
+
+                .form__box_menu_car_suv {
+                    width: 100%;
+
+                    .SUVMobi {
+                        display: block;
+                    }
+
+                    .MerSUVMobi {
+                        display: none;
+                    }
+
+                    .AMGSUVMobi {
+                        display: none;
+                    }
+
+                    .MBSUVMobi {
+                        display: none;
+                    }
+                }
+
+                .form__box_menu_car_coupe {
+                    width: 100%;
+
+                    .CoupeMobi {
+                        display: block;
+                    }
+
+                    .MerCoupeMobi {
+                        display: none;
+                    }
+
+                    .AMGCoupeMobi {
+                        display: none;
+                    }
+
+                    .MBCoupeMobi {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:759px) {
+    .form {
+        width: 100%;
+
+        .form__container_content {
+            width: 100%;
+
+            .form__container_title {
+                width: calc(100% );
+
+                .form__box_title {
+                    width: 100%;
+
+                    .title {
+                        padding: 4rem 0;
+                        font-size: 3rem;
+                        color: #333;
+                    }
+                }
+            }
+
+            .form__container_trademark {
+                display: none;
+                width: calc(100% );
+                position: relative;
+                top: 0;
+                z-index: 3;
+                background-color: #fff;
+                padding-bottom: 1rem;
+
+                .form__box_trademark {
+                    width: 100%;
+                    display: flex;
+
+                    .box_trademark {
+                        position: relative;
+                        border: 0.1rem solid #bbb;
+                        list-style: none;
+                        cursor: pointer;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            top: 0;
+                            background-color: transparent;
+                        }
+
+                        &:first-child {
+                            background-color: #333;
+                            color: #fff;
+                            fill: #ffffff;
+
+                        }
+
+                        .trademark {
+                            display: block;
+                            padding: 1rem;
+
+                            h2 {
+                                padding: 0.5rem 1rem 1rem 1rem;
+                                text-align: center;
+                                font-size: 1.5rem;
+                                font-weight: 600;
+                                text-transform: capitalize;
+                            }
+
+                            svg {
+                                height: 3rem;
+                                width: 12rem;
+                                fill: #000000;
+                            }
+                        }
+
+                        &:hover {
+                            .trademark {
+                                display: block;
+                                background-color: #a5a0a0;
+                                padding: 1rem;
+
+                                h2 {
+                                    color: #fff;
+
+                                }
+
+                                svg {
+                                    height: 3rem;
+                                    width: 12rem;
+                                    fill: #000000;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .form__container_NavBar {
+                display: none;
+                flex-direction: column;
+                margin-top: 3rem;
+
+                .form__box_NavBar {
+                    width: 100%;
+                }
+
+                .form__box_items_car {
+                    width: 100%;
+                }
+            }
+
+            .form__container_Name_TradeMark_dropdown {
+                width: 100%;
+                display: block;
+                z-index: 6;
+
+                .form__box_title_TradeMark {
+                    background-color: #333;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 1rem;
+
+                    .box_title_TradeMark {
+                        color: #fff;
+                        font-size: 1.6rem;
+                    }
+
+                    .box_icon__dropdown {
+
+                        svg {
+                            width: 1.6rem;
+                            fill: #fff;
+                        }
+                    }
+                }
+
+                .form__box_name_body_car {
+                    width: 100%;
+                    background-color: #fff;
+
+                    .form__list_name_body_car {
+                        display: flex;
+
+                        .list_name_body_car_all {
+                            display: block;
+                        }
+
+                        .list_name_body_car_sedans {
+                            display: block;
+                        }
+
+                        .list_name_body_car_suv {
+                            display: block;
+                        }
+
+                        .list_name_body_car_coupe {
+                            display: block;
+                        }
+
+                        .list_name_body_car {
+                            position: relative;
+                            width: calc(100% /2);
+                            text-align: center;
+                            padding: 1rem;
+                            font-size: 1.6rem;
+                            font-weight: 700;
+                            list-style: none;
+
+                            &.localBodyCar {
+
+                                &::after {
+                                    position: absolute;
+                                    content: '';
+                                    bottom: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: .2rem;
+                                    background-color: #3374d6;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .form__container_menu_car_mobi {
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+
+                .form__box_menu_car_sedans {
+                    width: 100%;
+
+                    .sedansMobi {
+                        display: block;
+                    }
+
+                    .MerSedansMobi {
+                        display: none;
+                    }
+
+                    .AMGSendansMobi {
+                        display: none;
+                    }
+
+                    .MBSedansMobi {
+                        display: none;
+                    }
+                }
+
+                .form__box_menu_car_suv {
+                    width: 100%;
+
+                    .SUVMobi {
+                        display: block;
+                    }
+
+                    .MerSUVMobi {
+                        display: none;
+                    }
+
+                    .AMGSUVMobi {
+                        display: none;
+                    }
+
+                    .MBSUVMobi {
+                        display: none;
+                    }
+                }
+
+                .form__box_menu_car_coupe {
+                    width: 100%;
+
+                    .CoupeMobi {
+                        display: block;
+                    }
+
+                    .MerCoupeMobi {
+                        display: none;
+                    }
+
+                    .AMGCoupeMobi {
+                        display: none;
+                    }
+
+                    .MBCoupeMobi {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
